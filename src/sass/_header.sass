@@ -1,4 +1,56 @@
 .header
     grid-column: full-start/-1
     grid-row: 1/2
-    border: 1px solid black // удалить
+   
+    display: grid
+    grid-template-columns: minmax(5rem, 14rem) repeat(2, minmax(min-content, 58rem)) minmax(5rem, 14rem)
+    grid-template-rows: repeat(2, min-content)
+    &__navigation
+        padding: 2rem 0
+        grid-column: 2/4
+        grid-row: 1/2
+    &__left-side
+        grid-column: 1/3
+        grid-row: 2/3
+    &__img
+        width: 100%
+    &__right-side
+        grid-column: 3/-1
+        grid-row: 2/3
+        padding: 19.8rem 12rem 9.8rem 4rem
+    &__text-1
+        margin-bottom: 1.7rem
+    &__title
+        margin-bottom: 4rem
+    &__text-2
+        margin-bottom: 7rem
+    &__icons
+        text-align: right
+    &__btn
+        display: inline-block
+        margin-bottom: 9.4rem
+
+.nav-menu
+
+    &__list
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        align-items: center
+        justify-items: center
+    &__item
+        &_1
+        &_2
+        &_logo
+        &_3
+        &_4
+    &__link
+        text-decoration: none
+        color: $color-text
+        font-family: 'Open Sans Light'
+        font-size: 1.6rem
+        line-height: 150%
+
+.icons
+    &__link
+        &:not(:last-child)
+                margin-right: 4rem
