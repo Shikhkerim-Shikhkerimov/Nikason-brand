@@ -1,3 +1,22 @@
 .nikason-family
     grid-column: full-start/-1
     grid-row: 3/4
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr))
+    grid-template-rows: repeat(2, min-content)
+    &__title
+        grid-column: 1/-1
+        margin-bottom: 10rem
+        text-align: center
+    &__img
+        width: 100%
+
+// правая часть секции
+.nf-right-side
+    padding: 6.8rem 18rem 4.8rem 4rem
+    background: rgba(235, 238, 235, 1)
+    &__title
+        margin-bottom: 4rem
+    &__text
+        margin-bottom: 5rem
+
