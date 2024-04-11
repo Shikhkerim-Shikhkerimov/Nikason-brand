@@ -10,7 +10,7 @@
     grid-template-rows: repeat(2, min-content)
     grid-gap: 7rem 4rem
     text-align: center
-    margin-bottom: 7rem
+    margin-bottom: clamp(2rem, 6.5vw, 7rem)
     transition: all .3s
     &:hover
         transform: scale(1.05)
@@ -32,7 +32,7 @@
         transform: scale(1.05)
     &__title
         grid-column: 1/-1
-        margin-bottom: 7rem
+        margin-bottom: clamp(2rem, 6.5vw, 7rem)
     &__icon
         display: inline-grid
         justify-items: center

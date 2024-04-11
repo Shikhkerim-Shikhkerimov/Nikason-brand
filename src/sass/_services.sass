@@ -2,7 +2,7 @@
     grid-column: full-start/-1
     grid-row: 5/6
     &__title
-        margin-bottom: 7rem
+        margin-bottom: clamp(2rem, 6.5vw, 7rem)
         text-align: center
 
 // Мебель на заказ 
@@ -13,8 +13,12 @@
     background: #E3DACE
     &__img
         width: 100%
+        padding: 1rem 0
     &__content
-        padding: 11rem 14rem 10.5rem 4rem
+        display: flex
+        flex-wrap: wrap
+        align-content: center
+        padding: 1rem 4rem
     &__title
         margin-bottom: 4rem
     &__text
