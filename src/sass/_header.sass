@@ -11,9 +11,13 @@
     &__left-side
         grid-column: 1/3
         grid-row: 2/3
+        @include adaptiv(1000px)
+            grid-column: 1/-1
     &__right-side
         grid-column: 3/-1
         grid-row: 2/3
+        @include adaptiv(1000px)
+            grid-column: 1/-1
 
 // меню сайта
 .nav-menu
@@ -51,9 +55,15 @@
     border-top: .2rem solid black
     border-bottom: .2rem solid black
     padding: .5rem 0
+    @include adaptiv(1000px)
+        height: 50rem
+        background: url(../img/test.png) center/cover no-repeat
+        filter: opacity(50%)
     &__img
         width: 100%
         object-fit: cover
+        @include adaptiv(1000px)
+            display: none
 
 // правая часть секции
 .right-side
@@ -64,6 +74,12 @@
     padding: 0 2rem
     border-top: .2rem solid black
     border-bottom: .2rem solid black
+    @include adaptiv(1000px)
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        z-index: 1
     &__text-1
         margin-bottom: 1.7rem
     &__title
@@ -73,6 +89,8 @@
     &__btn
         display: inline-block
         margin-right: 5rem
+        @include adaptiv(1000px)
+            margin: 0 0 2rem 0
 
 // иконки
 .icons

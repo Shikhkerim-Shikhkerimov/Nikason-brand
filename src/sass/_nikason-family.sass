@@ -11,6 +11,13 @@
         text-align: center
     &__img
         width: 100%
+        @include adaptiv(1000x)
+            height: 50rem
+            object-fit: cover
+    &__left-side
+        @include adaptiv(1000px)
+            grid-column: 1/-1
+            grid-row: 2/-1
 
 // правая часть секции
 .nf-right-side
@@ -19,9 +26,14 @@
     justify-content: center
     padding: 1rem 4rem
     background: rgba(235, 238, 235, 1)
+    @include adaptiv(1000px)
+        grid-column: 1/-1
+        grid-row: 2/-1
+        background: rgba(235, 238, 235, .7)
+        align-items: center
+        z-index: 1
     &__title
         margin-bottom: 4rem
     &__text
         max-width: 50rem
         margin-bottom: 5rem
-

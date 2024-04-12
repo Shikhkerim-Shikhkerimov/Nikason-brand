@@ -1,10 +1,12 @@
 .title-h1
     font-family: 'Tenor Sans Regular'
-    font-size: clamp(3rem, 3.5vw, 4.8rem)
+    font-size: 4.8rem
     line-height: 120%
     color: $color-title
     &_white
         color: #F6F6F6
+    @include adaptiv(600px)
+        font-size: 32px
 
 .title-h2
     font-family: 'Tenor Sans Regular'
@@ -17,15 +19,21 @@
     font-size: 2.4rem
     line-height: 150%
     color: $color-black
+    @include adaptiv(1000px)
+        font-size: 20px
 
 .text
     font-family: 'Open Sans Light'
     font-size: 1.8rem
     line-height: 150%
     color: $color-text
+    @include adaptiv(1000px)
+        font-size: 16px
     &_black
         color: $color-black
     &_white
         color: #F6F6F6
     &_fs-24px
         font-size: 2.4rem
+        @include adaptiv(1000px)
+            font-size: 16px

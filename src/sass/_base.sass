@@ -3,6 +3,10 @@
 
 html
     font-size: 62.5%
+    @media ( max-width: 800px)
+        font-size: 50%
+    @media ( max-width: 600px)
+        font-size: 40%
 
 .container
     max-width: 144rem
@@ -11,3 +15,11 @@ html
     display: grid
     grid-template-columns: [full-start] minmax(5rem, 14rem) repeat(7, [coll-start] minmax(min-content, 116rem) [coll-end]) minmax(5rem, 14rem) [full-end]
     grid-template-rows: repeat(7, min-content)
+
+@mixin adaptiv($adaptiv)
+    @if $adaptiv == 1000px
+        @media ( max-width: 1000px)
+            @content
+    @if $adaptiv == 600px
+        @media ( max-width: 600px)
+            @content
