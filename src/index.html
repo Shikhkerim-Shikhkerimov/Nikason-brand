@@ -29,8 +29,20 @@
 
 <body>
     <div class="container">
-        <!-- меню сайта и заголовок первого уровня -->
         <header class="header">
+            <!-- меня для планшетов и мобильной версии -->
+            <div class="header__hamburger hamburger">
+                <input class="hamburger__input" type="checkbox" id="hamburger">
+                <nav class="hamburger__navigation nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Мастер-классы</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Мебель на заказ</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <label class="hamburger__btn" for="hamburger"><span></span></label>
+            </div>
             <!-- меню сайта -->
             <nav class="header__navigation nav-menu">
                 <ul class="nav-menu__list">
