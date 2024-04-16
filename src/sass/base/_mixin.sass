@@ -1,0 +1,10 @@
+@mixin adaptiv($adaptiv)
+    @if $adaptiv == min-width
+        @media ( min-width: 1001px)
+            @content
+    @if $adaptiv == 1000px
+        @media ( max-width: 1000px)
+            @content
+    @if $adaptiv == 600px
+        @media ( max-width: 600px)
+            @content

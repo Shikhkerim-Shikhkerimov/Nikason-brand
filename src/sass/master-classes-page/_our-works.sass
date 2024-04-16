@@ -1,0 +1,21 @@
+.our-works
+    grid-column: coll-start/coll-end
+    grid-row: 2/3
+    padding: 7rem 0
+    &__title
+        margin-bottom: 7rem
+    &__works
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr))
+        grid-template-rows: repeat(2, max-content)
+        grid-gap: 5rem 4rem
+        margin-bottom: 7rem
+    &__img
+        display: grid
+        grid-template-rows: repeat(2, max-content)
+        justify-items: center
+        grid-row-gap: 2.5rem
+        img
+            width: 100%
+    &__btn
+        text-align: center
