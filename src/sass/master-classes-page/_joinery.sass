@@ -1,4 +1,16 @@
 .joinery
-    border: 2px solid // удалить
     grid-column: coll-start/coll-end
     grid-row: 6/7
+    &__title
+        margin-bottom: 7rem
+    &__furniture
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr))
+        grid-gap: 4rem
+    &__img
+        display: grid
+        grid-template-rows: repeat(2, max-content)
+        justify-items: center
+        grid-row-gap: 2.5rem
+        img
+            width: 100%

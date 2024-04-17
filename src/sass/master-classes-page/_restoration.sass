@@ -1,4 +1,20 @@
 .restoration
-    border: 2px solid // удалить
     grid-column: coll-start/coll-end
     grid-row: 5/6
+    padding: 7rem 0
+    &__title
+        margin-bottom: 7rem
+    &__furniture
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr))
+        grid-template-rows: repeat(2, max-content)
+        align-items: end
+        justify-items: center
+        grid-gap: 5rem 4rem
+    &__img
+        display: grid
+        grid-template-rows: repeat(2, max-content)
+        justify-items: center
+        grid-row-gap: 2.5rem
+        img
+            width: 100%
