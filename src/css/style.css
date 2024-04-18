@@ -448,7 +448,7 @@ html {
 .brand-information {
   grid-column: coll-start/coll-end 7;
   grid-row: 2/3;
-  padding: 7rem 0;
+  padding: 10rem 0;
 }
 
 .primary {
@@ -544,7 +544,7 @@ html {
 .section-video {
   grid-column: coll-start/coll-end 7;
   grid-row: 4/5;
-  padding: 7rem 0;
+  padding: 10rem 0;
   transition: all 0.3s;
 }
 .section-video:hover {
@@ -592,7 +592,7 @@ html {
 .quality-assurance {
   grid-column: coll-start/coll-end 7;
   grid-row: 6/7;
-  padding: clamp(2rem, 6.5vw, 10rem) 0;
+  padding: 10rem 0;
   transition: all 0.3s;
 }
 .quality-assurance:hover {
@@ -660,7 +660,7 @@ html {
 .our-works {
   grid-column: coll-start/coll-end;
   grid-row: 2/3;
-  padding: 7rem 0;
+  padding: 10rem 0;
 }
 .our-works__title {
   margin-bottom: 7rem;
@@ -696,7 +696,7 @@ html {
 .restoration {
   grid-column: coll-start/coll-end;
   grid-row: 5/6;
-  padding: 7rem 0;
+  padding: 10rem 0;
 }
 .restoration__title {
   margin-bottom: 7rem;
@@ -722,7 +722,7 @@ html {
 .mc-techniques {
   grid-column: coll-start/coll-end;
   grid-row: 3/4;
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
 }
 .mc-techniques__title {
   margin-bottom: 7rem;
@@ -811,7 +811,7 @@ html {
 .redesign {
   grid-column: coll-start/coll-end;
   grid-row: 7/8;
-  padding: 7rem 0;
+  padding: 10rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 2rem;
