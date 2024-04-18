@@ -1,4 +1,18 @@
 .redesign
-    border: 2px solid // удалить
     grid-column: coll-start/coll-end
     grid-row: 7/8
+    padding: 7rem 0
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-column-gap: 2rem
+    &__left-side
+        grid-column: 1/2
+    &__title
+        margin-bottom: 7rem
+    &__text
+        margin-bottom: 5rem
+    &__right-side
+        grid-column: 2/3
+        width: 100%
+        height: 100%
+        background: url(../img/master-classes-page/redesign-img-1.jpg) center/cover no-repeat
