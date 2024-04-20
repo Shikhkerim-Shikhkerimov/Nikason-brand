@@ -741,10 +741,12 @@ html {
 }
 .our-works__works {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
   grid-template-rows: repeat(2, max-content);
   grid-gap: 5rem 4rem;
   margin-bottom: 7rem;
+  align-items: center;
+  justify-items: center;
 }
 .our-works__img {
   display: grid;
@@ -763,7 +765,7 @@ html {
   grid-column: full-start/-1;
   grid-row: 4/5;
   background: url(../img/master-classes-page/section-background-img.png) center/cover no-repeat;
-  padding: 18rem 24rem;
+  padding: clamp(4rem, 13vw, 18rem);
   text-align: center;
 }
 
@@ -890,6 +892,8 @@ html {
 }
 .joinery__img img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .redesign {
@@ -903,6 +907,16 @@ html {
 .redesign__left-side {
   grid-column: 1/2;
 }
+@media (max-width: 1000px) {
+  .redesign__left-side {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    padding: 2rem;
+    background: rgba(235, 238, 235, 0.7);
+    text-align: center;
+    z-index: 1;
+  }
+}
 .redesign__title {
   margin-bottom: 7rem;
 }
@@ -914,4 +928,11 @@ html {
   width: 100%;
   height: 100%;
   background: url(../img/master-classes-page/redesign-img-1.jpg) center/cover no-repeat;
+}
+@media (max-width: 1000px) {
+  .redesign__right-side {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    background: url(../img/master-classes-page/redesign-img-2.jpg) center/cover no-repeat;
+  }
 }
