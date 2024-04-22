@@ -1,0 +1,31 @@
+.order-furniture
+    grid-column: full-start/-1
+    grid-row: header-start/header-end
+    display: grid
+    grid-template-columns: minmax(5rem, 14rem) minmax(min-content, 116rem) minmax(5rem, 14rem)
+    grid-template-rows: repeat(2, max-content)
+    &__navigation
+        grid-column: 2/3
+        grid-row: 1/2
+    &__section
+        grid-column: 1/-1
+        grid-row: 2/3
+        height: 82vh
+        padding: 2rem
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background: linear-gradient(180deg, rgba(50, 50, 50, 0.5) 61.6%, rgba(0, 0, 0, 0.5) 100%), url(../img/order-furniture/header-img.png) center / cover no-repeat
+        text-align: center
+    &__text
+        margin-bottom: .5rem
+    &__title
+        
+    &__btn
+
+.title-h1
+    margin-bottom: 9rem
+    &__1
+        margin-bottom: 2.5rem
+    &__2

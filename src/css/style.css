@@ -937,3 +937,71 @@ html {
     background: url(../img/master-classes-page/redesign-img-2.jpg) center/cover no-repeat;
   }
 }
+
+.order-furniture-container {
+  display: grid;
+  grid-template-columns: [full-start] minmax(5rem, 14rem) [coll-start] minmax(min-content, 116rem) [coll-end] minmax(5rem, 14rem) [full-end];
+  grid-template-rows: [header-start] min-content [header-end about-us-start] min-content [about-us-end portfolio-start] min-content [portfolio-end production-stages-start] min-content [production-stages-end reviews-start] min-content [reviews-end feedback-start] min-content [feedback-end footer-start] min-content [footer-end];
+}
+
+.order-furniture {
+  grid-column: full-start/-1;
+  grid-row: header-start/header-end;
+  display: grid;
+  grid-template-columns: minmax(5rem, 14rem) minmax(min-content, 116rem) minmax(5rem, 14rem);
+  grid-template-rows: repeat(2, max-content);
+}
+.order-furniture__navigation {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.order-furniture__section {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  height: 82vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(50, 50, 50, 0.5) 61.6%, rgba(0, 0, 0, 0.5) 100%), url(../img/order-furniture/header-img.png) center/cover no-repeat;
+  text-align: center;
+}
+.order-furniture__text {
+  margin-bottom: 0.5rem;
+}
+.title-h1 {
+  margin-bottom: 9rem;
+}
+.title-h1__1 {
+  margin-bottom: 2.5rem;
+}
+.about-us {
+  grid-column: coll-start/coll-end;
+  grid-row: about-us-start/about-us-end;
+  border: 1px solid;
+}
+
+.portfolio {
+  grid-column: coll-start/coll-end;
+  grid-row: portfolio-start/portfolio-end;
+  border: 1px solid;
+}
+
+.production-stages {
+  grid-column: coll-start/coll-end;
+  grid-row: production-stages-start/production-stages-end;
+  border: 1px solid;
+}
+
+.reviews {
+  grid-column: coll-start/coll-end;
+  grid-row: reviews-start/reviews-end;
+  border: 1px solid;
+}
+
+.feedback {
+  grid-column: coll-start/coll-end;
+  grid-row: feedback-start/feedback-end;
+  border: 1px solid;
+}
