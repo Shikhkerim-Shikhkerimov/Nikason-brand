@@ -164,6 +164,9 @@ html {
 .text_font-bold {
   font-family: "Open Sans Bold";
 }
+.text_fs-16px {
+  font-size: 16px;
+}
 .text_fs-24px {
   font-size: 2.4rem;
 }
@@ -975,11 +978,35 @@ html {
 }
 .title-h1__1 {
   margin-bottom: 2.5rem;
+  animation: animation-1 4s ease-in-out;
 }
+
 .about-us {
   grid-column: coll-start/coll-end;
   grid-row: about-us-start/about-us-end;
-  border: 1px solid;
+  padding: 10rem 0;
+}
+.about-us__title {
+  margin-bottom: 7rem;
+}
+.about-us__information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-rows: repeat(2, max-content);
+  justify-items: center;
+  grid-gap: 7rem;
+}
+
+.text__div {
+  max-width: 25rem;
+}
+.text__1 {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #715B4B;
+  padding: 0 0 1rem 0.5rem;
+}
+.text__2 {
+  padding-left: 0.5rem;
 }
 
 .portfolio {
