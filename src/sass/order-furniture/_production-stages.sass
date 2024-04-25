@@ -1,4 +1,25 @@
 .production-stages
     grid-column: coll-start/coll-end
     grid-row: production-stages-start/production-stages-end
-    border: 1px solid // удалить
+    padding: 10rem 0
+    &__title
+        margin-bottom: 7rem
+
+.stages
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr))
+    grid-template-rows: repeat(2, min-content)
+    &__container
+        border: 1px solid
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, max-content)
+        justify-items: end
+        padding: 2rem 4rem
+    &__number
+        grid-column: 2/3
+        grid-row: 1/2
+    &__text
+        grid-column: 1/2
+        grid-row: 2/3
+        width: 23rem

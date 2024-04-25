@@ -1018,13 +1018,98 @@ html {
 .production-stages {
   grid-column: coll-start/coll-end;
   grid-row: production-stages-start/production-stages-end;
+  padding: 10rem 0;
+}
+.production-stages__title {
+  margin-bottom: 7rem;
+}
+
+.stages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-rows: repeat(2, min-content);
+}
+.stages__container {
   border: 1px solid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, max-content);
+  justify-items: end;
+  padding: 2rem 4rem;
+}
+.stages__number {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.stages__text {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 23rem;
 }
 
 .reviews {
   grid-column: coll-start/coll-end;
   grid-row: reviews-start/reviews-end;
-  border: 1px solid;
+}
+.reviews__title {
+  margin-bottom: 7rem;
+}
+
+.box-feedback {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-feedback__card {
+  max-width: 106rem;
+  height: 22rem;
+  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+  padding: 3rem 10rem;
+  transition: all 0.5s;
+}
+.box-feedback__card:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.box-feedback__card:hover {
+  transform: scale(1.05, 1.05);
+}
+.box-feedback__card_figure {
+  max-width: 16rem;
+  height: 16rem;
+  border-radius: 100%;
+  position: relative;
+  float: left;
+  shape-outside: circle(50%);
+  margin-right: 4rem;
+}
+.box-feedback__card_figure img {
+  width: 100%;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+.box-feedback__card:hover img {
+  transform: scale(0.9, 0.9);
+  filter: blur(0.2rem) brightness(85%);
+}
+.box-feedback__card_name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.box-feedback__card:hover .box-feedback__card_name {
+  opacity: 1;
+  transform: translate(-50%, -30%);
+}
+.box-feedback__content {
+  max-width: 85rem;
 }
 
 .feedback {

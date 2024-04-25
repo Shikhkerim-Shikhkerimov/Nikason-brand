@@ -1,4 +1,51 @@
 .reviews
     grid-column: coll-start/coll-end
     grid-row: reviews-start/reviews-end
-    border: 1px solid // удалить
+    &__title
+        margin-bottom: 7rem
+
+.box-feedback
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__card
+        max-width: 106rem
+        height: 22rem
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%)
+        padding: 3rem 10rem
+        &:not(:last-child)
+            margin-bottom: 3rem
+        transition: all .5s
+        &:hover
+            transform: scale(1.05, 1.05)
+        &_figure
+            max-width: 16rem
+            height: 16rem
+            border-radius: 100%
+            position: relative
+            float: left
+            shape-outside: circle(50%)
+            margin-right: 4rem
+            img
+                width: 100%
+                border-radius: 100%
+                transition: all .5s
+        &:hover img
+            transform: scale(.9, .9)
+            filter: blur(.2rem) brightness(85%)
+        &_name
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,50%)
+            font-size: 2rem
+            letter-spacing: 0.08em
+            text-align: center
+            transition: all .5s
+            opacity: 0
+        &:hover &_name
+            opacity: 1
+            transform: translate(-50%,-30%)
+    &__content
+        max-width: 85rem
