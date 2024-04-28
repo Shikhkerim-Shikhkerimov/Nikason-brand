@@ -96,6 +96,24 @@
             </div>
         </section>
 
+        <!-- портфолио -->
+        <section class="portfolio">
+            <h2 class="portfolio__title title-h2">Портфолио</h2>
+            <div id="slide">
+                <div class="item" style="background: url(img/order-furniture/test-1.jpg);"></div>
+                <div class="item" style="background: url(img/order-furniture/test-2.jpg);"></div>
+                <div class="item" style="background: url(img/order-furniture/test-3.jpg);"></div>
+                <div class="item" style="background: url(img/order-furniture/test-1.jpg);"></div>
+                <div class="item" style="background: url(img/order-furniture/test-2.jpg);"></div>
+                <div class="item" style="background: url(img/order-furniture/test-3.jpg);"></div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-left"></i></button>
+                <i></i>
+            </div>
+        </section>
+
         <!-- секция с этапами производства -->
         <section class="production-stages">
             <h2 class="production-stages__title title-h2">Этапы производства</h2>
@@ -215,6 +233,28 @@
             </div>
         </section>
 
+        <!-- секция для обратной связи -->
+        <section class="feedback">
+            <h2 class="feedback__title title-h2">Оставьте заявку и мы с вами свяжемся</h2>
+            <div class="feedback__request-container">
+                <div class="feedback__request text">
+                    <div class="feedback__data">
+                        <input class="feedback__input" type="text" placeholder="Имя Фамилия">
+                        <label>Имя Фамилия</label>
+                    </div>
+                    <div class="feedback__data">
+                        <input class="feedback__input" type="email" placeholder="Почтовый адрес">
+                        <label>Почтовый адрес</label>
+                    </div>
+                    <div class="feedback__data">
+                        <input class="feedback__input" type="number" placeholder="Номер телефона">
+                        <label>Номер телефона</label>
+                    </div>
+                    <div class="feedback__btn"><a class="main-btn" href="#">Оставить заявку</a></div>
+                </div>
+            </div>
+        </section>
+
         <!-- footer -->
         <footer class="footer">
             <!-- ИП и ИНН -->
@@ -239,6 +279,9 @@
                 <a class="footer__link" href="#"><img class="footer__link footer__link_img" src="icons/icon-footer-3.svg" alt="whatsapp"></a>
             </div>
         </footer>
+
+
+        <script src="js/portfolio-slider.js"></script>
     </div>
 </body>
 </html>
