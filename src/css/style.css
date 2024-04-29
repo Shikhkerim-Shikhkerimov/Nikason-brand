@@ -277,6 +277,60 @@ html {
     transform: translateY(-4rem);
   }
 }
+@keyframes order-furniture-header-text {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(10rem);
+  }
+}
+@keyframes order-furniture-header-btn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-10rem);
+  }
+}
+@keyframes order-furniture-header-title-1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(100rem);
+  }
+  85% {
+    transform: translateX(-5rem);
+  }
+}
+@keyframes order-furniture-header-title-2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(-100rem);
+  }
+  85% {
+    transform: translateX(5rem);
+  }
+}
 .hamburger {
   grid-column: 1/-1;
   height: 7rem;
@@ -973,19 +1027,31 @@ html {
 }
 .order-furniture__text {
   margin-bottom: 0.5rem;
+  animation: order-furniture-header-text 2s ease-in-out;
 }
+.order-furniture__btn {
+  animation: order-furniture-header-btn 2s ease-in-out;
+}
+
 .title-h1 {
   margin-bottom: 9rem;
 }
 .title-h1__1 {
   margin-bottom: 2.5rem;
-  animation: animation-1 4s ease-in-out;
+  animation: order-furniture-header-title-1 4s ease-in-out;
+}
+.title-h1__2 {
+  animation: order-furniture-header-title-2 4s ease-in-out;
 }
 
 .about-us {
   grid-column: coll-start/coll-end;
   grid-row: about-us-start/about-us-end;
   padding: 10rem 0;
+  transition: all 0.3s;
+}
+.about-us:hover {
+  transform: scale(1.05);
 }
 .about-us__title {
   margin-bottom: 7rem;
@@ -1016,6 +1082,10 @@ html {
   border: 1px solid;
   position: relative;
   height: 50rem;
+  transition: all 0.3s;
+}
+.portfolio:hover {
+  transform: scale(1.05);
 }
 
 #slide {
@@ -1075,6 +1145,10 @@ html {
   grid-column: coll-start/coll-end;
   grid-row: production-stages-start/production-stages-end;
   padding: 10rem 0;
+  transition: all 0.3s;
+}
+.production-stages:hover {
+  transform: scale(1.05);
 }
 .production-stages__title {
   margin-bottom: 7rem;
@@ -1106,6 +1180,10 @@ html {
 .reviews {
   grid-column: coll-start/coll-end;
   grid-row: reviews-start/reviews-end;
+  transition: all 0.3s;
+}
+.reviews:hover {
+  transform: scale(1.05);
 }
 .reviews__title {
   margin-bottom: 7rem;
@@ -1114,12 +1192,19 @@ html {
 .box-feedback {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-template-rows: repeat(3, max-content);
+  grid-template-rows: repeat(4, max-content);
   grid-gap: 4rem 2rem;
 }
 .box-feedback__card {
   border: 1px solid #758a73;
   padding: 1.5rem;
+  border-radius: 0.3rem;
+  transition: all 0.5s;
+}
+.box-feedback__card:hover {
+  transform: scale(1.05, 1.05);
+  background: #f2e3d0;
+  box-shadow: 0.17rem 0.17rem 0.1rem 0.1rem rgba(178, 175, 175, 0.5);
 }
 .box-feedback__card_figure {
   -o-object-fit: cover;
@@ -1135,6 +1220,11 @@ html {
 .box-feedback__card_figure img {
   width: 100%;
   border-radius: 100%;
+  transition: all 0.5s;
+}
+.box-feedback__card:hover img {
+  transform: scale(0.9, 0.9);
+  filter: blur(0.2rem) brightness(85%);
 }
 .box-feedback__card_name {
   position: absolute;
@@ -1143,13 +1233,22 @@ html {
   transform: translate(-50%, 50%);
   letter-spacing: 0.08em;
   text-align: center;
+  transition: all 0.5s;
   opacity: 0;
+}
+.box-feedback__card:hover .box-feedback__card_name {
+  opacity: 1;
+  transform: translate(-50%, -30%);
 }
 
 .feedback {
   grid-column: coll-start/coll-end;
   grid-row: feedback-start/feedback-end;
   padding: 10rem 0;
+  transition: all 0.3s;
+}
+.feedback:hover {
+  transform: scale(1.05);
 }
 .feedback__title {
   margin-bottom: 7rem;
