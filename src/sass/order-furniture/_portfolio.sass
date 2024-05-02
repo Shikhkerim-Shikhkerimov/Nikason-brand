@@ -8,6 +8,29 @@
     transition: all .3s
     &:hover
         transform: scale(1.05)
+    &__title
+        margin-bottom: 7rem
+    &__buttons
+        position: absolute
+        bottom: 30px
+        z-index: 5
+        width: 100%
+        border: 2px solid red
+    &__button
+        width: 30px
+        height: 30px
+        padding: 0
+        border: none
+        border-radius: 100%
+        position: absolute
+        z-index: 5
+        &_left
+            left: 0
+        &_right
+            right: 0
+        img
+            width: 100%
+
 
 
 #slide
@@ -41,15 +64,3 @@
     &:nth-child(n+6)
         left: 110%
         opacity: 0
-
-.buttons
-    position: absolute
-    bottom: 30px
-    z-index: 5
-    text-align: center
-    width: 100%
-
-.buttons button
-    width: 50px
-    height: 50px
-    border-radius: 100%
