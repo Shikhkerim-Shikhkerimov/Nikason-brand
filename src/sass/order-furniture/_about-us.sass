@@ -3,6 +3,8 @@
     grid-row: about-us-start/about-us-end
     padding: 10rem 0
     transition: all .3s
+    @include adaptiv(950px)
+        text-align: center
     &:hover
         transform: scale(1.05)
     &__information
@@ -17,7 +19,7 @@
         max-width: 25rem
     &__1
         margin-bottom: 2rem
-        border-bottom: 2px solid pale-brown
+        border-bottom: 2px solid $pale-brown
         padding: 0 0 1rem .5rem
     &__2
         padding-left: .5rem
