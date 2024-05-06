@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 @media (max-width: 800px) {
   html {
@@ -201,7 +202,7 @@ html {
 }
 .main-btn_white {
   background: #F6F6F6;
-  color: #4C6D77;
+  color: #4c6d77;
 }
 .main-btn_white:hover {
   background: #F3EFEA;
@@ -369,7 +370,7 @@ html {
   content: "";
   width: 3rem;
   height: 0.1rem;
-  background: #715B4B;
+  background: pale-brown;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -400,7 +401,7 @@ html {
   position: fixed;
   background: #F3EFEA;
   width: 100%;
-  border-bottom: 1px solid #715B4B;
+  border-bottom: 1px solid pale-brown;
 }
 .nav__list {
   display: grid;
@@ -602,7 +603,7 @@ html {
 }
 .primary__content {
   padding-bottom: 1.4rem;
-  border-bottom: 0.3rem solid #715B4B;
+  border-bottom: 0.3rem solid pale-brown;
 }
 
 .secondary {
@@ -736,7 +737,7 @@ html {
   padding: 1rem;
 }
 .quality-assurance__content {
-  border: 0.1rem solid #715B4B;
+  border: 0.1rem solid pale-brown;
   padding: 5rem 9rem 4rem 9rem;
 }
 @media (max-width: 600px) {
@@ -890,7 +891,7 @@ html {
   justify-content: center;
   font-family: "Open Sans Bold";
   font-size: 2.4rem;
-  color: #f6f6f6;
+  color: #F6F6F6;
   z-index: 2;
 }
 .list__number_1 {
@@ -1054,7 +1055,7 @@ html {
 }
 .text__1 {
   margin-bottom: 2rem;
-  border-bottom: 2px solid #715B4B;
+  border-bottom: 2px solid pale-brown;
   padding: 0 0 1rem 0.5rem;
 }
 .text__2 {
