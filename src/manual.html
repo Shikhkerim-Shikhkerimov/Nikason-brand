@@ -27,21 +27,45 @@
     </head>
 <body>
     <div class="container">
+        <!-- меню сайта -->
+        <header class="header">
+            <!-- меня для планшетов и мобильной версии -->
+            <div class="header__hamburger hamburger">
+                <input class="hamburger__input" type="checkbox" id="hamburger">
+                <nav class="hamburger__navigation nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Мастер-классы</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Мебель на заказ</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+                    </ul>
+                </nav>
+                <label class="hamburger__btn" for="hamburger"><span></span></label>
+            </div>
+            <!-- меню сайта -->
+            <nav class="header__navigation nav-menu">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Мастер-классы</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Контакты</a></li>
+                    <!-- логотип сайта -->
+                    <div class="nav-menu__item"><a class="nav-menu__logo" href="#"> <img class="nav-menu__logo" src="icons/nikason-logo.svg" alt="logo"></a></div>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Мебель на заказ</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">О нас</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <!-- первая страница -->
         <section class="page-1">
-            <!-- логотип -->
-            <div class="page-1__logo logo mb-7rem">
-                <a href="#"><img class="logo__nikason-logo" src="icons/nikason-logo.svg" alt="logo"></a>
-            </div>
             <!-- описание и заголовок -->
             <div class="page-1__description description mb-7rem">
-                <p class="description__text text text_fs-24px">Краткое руководство по <br>редизайну деревянной мебели</p>
+                <p class="description__text text text_fs-20px">Краткое руководство по <br>редизайну деревянной мебели</p>
                 <h1 class="description__title title-h1">Реставрируй с NIKASON</h1>
             </div>
             <!-- изображения -->
             <div class="page-1__img img title-h3 mb-7rem">
                 <div class="img__img"><img src="img/manual/page-1_img-1.png" alt="img">до</div>
-                <div class="img__img"><img src="img/manual/page-1_img-2.png" alt="img">после</div>
+                <div class="img__img img__img_anm"><img src="img/manual/page-1_img-2.png" alt="img">после</div>
             </div>
             <!-- инстаграм -->
             <div class="page-1__nickname nickname">
@@ -52,7 +76,7 @@
 
         <!-- вторая страница -->
         <section class="page-background">
-            <div class="page page-2 text text_fs-24px">
+            <div class="page page-2 text text_fs-20px">
                 <!-- логотип -->
                 <div class="page-2__logo logo mb-7rem">
                     <a href="#"><img class="logo__nikason-logo" src="icons/nikason-logo.svg" alt="logo"></a>
@@ -81,7 +105,7 @@
 
         <!-- третья страница -->
         <section class="page-background page-background_pb">
-            <div class="page page-3 text text_fs-24px">
+            <div class="page page-3 text text_fs-20px">
                 <!-- логотип -->
                 <div class="page-3__logo logo mb-7rem">
                     <a href="#"><img class="logo__nikason-logo" src="icons/nikason-logo.svg" alt="logo"></a>
@@ -92,15 +116,15 @@
                     <ul class="content-list__list-pages">
                         <a class="content-list__link" href="#"><li class="content-list__page">1. Место для реставрации - стр.4</li></a>
                         <a class="content-list__link" href="#"><li class="content-list__page">2. Инструменты и материалы - стр.5</li></a>
-                        <a class="content-list__link" href="#"><li class="content-list__page">3. Краски, масла и лаки - стр.10</li></a>
-                        <a class="content-list__link" href="#"><li class="content-list__page">4. Разборка мебели и снятие фурнитуры - стр.12</li></a>
-                        <a class="content-list__link" href="#"><li class="content-list__page">5. Удаление старого лакокрасочного покрытия - стр.14</li></a>
-                        <a class="content-list__link" href="#"><li class="content-list__page">6. Удаление повреждений: царапины, трещины, сколы и т.д - стр.16</li></a>
-                        <a class="content-list__link" href="#"><li class="content-list__page">7. Подготовка к окрашиванию поверхности - стр.19</li></a>
-                        <a class="content-list__link" href="#"><li class="content-list__page">8. Нанесение краски - стр.20</li></a>
-                        <a class="content-list__link" href="#"><li class="content-list__page">9. Нанесение масла - стр.21</li></a>
-                        <a class="content-list__link" href="#"><li class="content-list__page">10. Нанесение лака - стр.23</li></a>
-                        <a class="content-list__link" href="#"><li class="content-list__page">11. Сборка мебели и установка фурнитуры - стр.25</li></a>
+                        <a class="content-list__link" href="#"><li class="content-list__page">3. Краски, масла и лаки - стр.6</li></a>
+                        <a class="content-list__link" href="#"><li class="content-list__page">4. Разборка мебели и снятие фурнитуры - стр.7</li></a>
+                        <a class="content-list__link" href="#"><li class="content-list__page">5. Удаление старого лакокрасочного покрытия - стр.8</li></a>
+                        <a class="content-list__link" href="#"><li class="content-list__page">6. Удаление повреждений: царапины, трещины, сколы и т.д - стр.9</li></a>
+                        <a class="content-list__link" href="#"><li class="content-list__page">7. Подготовка к окрашиванию поверхности - стр.10</li></a>
+                        <a class="content-list__link" href="#"><li class="content-list__page">8. Нанесение краски - стр.11</li></a>
+                        <a class="content-list__link" href="#"><li class="content-list__page">9. Нанесение масла - стр.12</li></a>
+                        <a class="content-list__link" href="#"><li class="content-list__page">10. Нанесение лака - стр.13</li></a>
+                        <a class="content-list__link" href="#"><li class="content-list__page">11. Сборка мебели и установка фурнитуры - стр.14</li></a>
                     </ul>
                 </div>
                 <!-- номер страницы -->
@@ -112,21 +136,21 @@
 
         <!-- четвертая страница -->
         <section class="page-background page-background_pb">
-            <div class="page page-4 text text_fs-24px">
+            <div class="page page-4 text text_fs-20px">
                 <!-- логотип -->
                 <div class="page-4__logo logo mb-7rem">
                     <a href="#"><img class="logo__nikason-logo" src="icons/nikason-logo.svg" alt="logo"></a>
                 </div>
                 <!-- заголовок и содержание -->
-                <div class="page-4__place-restoration place-restoration mb-4rem">
-                    <h2 class="place-restoration__title title-h2 title-h2_black mb-4rem">Место для реставрации</h2>
-                    <div class="place-restoration__content mb-4rem">
-                        <p class="place-restoration__text">В процессе реставрации старой деревянной мебели почти неизбежно придется столкнуться с пылью и неприятными запахами. <br><br>Многие защитные и укрывающие составы для дерева также обладают резким запахом.</p>
-                        <img class="place-restoration__img" src="img/manual/page-4_img-1.png" alt="img">
+                <div class="page-4__redesign-recommendation redesign-recommendationn mb-4rem">
+                    <h2 class="redesign-recommendation__title title-h2 title-h2_black mb-4rem">Место для реставрации</h2>
+                    <div class="redesign-recommendation__content mb-4rem">
+                        <p class="redesign-recommendation__text">В процессе реставрации старой деревянной мебели почти неизбежно придется столкнуться с пылью и неприятными запахами. <br><br>Многие защитные и укрывающие составы для дерева также обладают резким запахом.</p>
+                        <img class="redesign-recommendation__img" src="img/manual/page-4_img-1.png" alt="img">
                     </div>
-                    <div class="place-restoration__content">
-                        <img class="place-restoration__img" src="img/manual/page-4_img-2.png" alt="img">
-                        <p class="place-restoration__text">Потому перенесите работы в нежилое помещение или двор. Если нет других вариантов, то комната в квартире тоже подойдет. <br><br>Но перед работой необходимо укрыть прочую мебель целлофановой пленкой и убрать текстиль и ковровые покрытия.</p>
+                    <div class="redesign-recommendation__content">
+                        <img class="redesign-recommendation__img" src="img/manual/page-4_img-2.png" alt="img">
+                        <p class="redesign-recommendation__text">Потому перенесите работы в нежилое помещение или двор. Если нет других вариантов, то комната в квартире тоже подойдет. <br><br>Но перед работой необходимо укрыть прочую мебель целлофановой пленкой и убрать текстиль и ковровые покрытия.</p>
                     </div>
                 </div>
                 <!-- номер страницы -->
@@ -138,7 +162,7 @@
 
         <!-- пятая страница -->
         <section class="page-background page-background_pb">
-            <div class="page page-5 text text_fs-24px">
+            <div class="page page-5 text text_fs-20px">
                 <!-- логотип -->
                 <div class="page-5__logo logo mb-7rem">
                     <a href="#"><img class="logo__nikason-logo" src="icons/nikason-logo.svg" alt="logo"></a>
@@ -267,6 +291,125 @@
             </div>
         </section>
 
+        <!-- шестая страница -->
+        <section class="page-background page-background_pb">
+            <div class="page page-6 text text_fs-20px">
+                <!-- логотип -->
+                <div class="page-6__logo logo mb-7rem">
+                    <a href="#"><img class="logo__nikason-logo" src="icons/nikason-logo.svg" alt="logo"></a>
+                </div>
+                <!-- заголовок и содержание -->
+                <div class="page-6__reddesign-guide reddesign-guide mb-4rem">
+                    <h2 class="reddesign-guide__title title-h2 title-h2_black mb-4rem">Краски, масла и лаки</h2>
+                    <p class="reddesign-guide__text">На сегодняшний день существует огромный выбор красок, лаков и масел от разных производителей. 
+                        <br><br>Я выбираю премиальную краску фирмы Dulux. Иногда использую краски фирмы Tikkurila. Вы же можете использовать краску любой фирмы, которая вам по душе. 
+                        <br><br>Выбрать покрытие необходимо перед началом работы, так как от вашего выбора будет зависеть объем работы. 
+                        <br><br>Различают несколько видов покрытий:<br><br>
+                        <span>1. Лаки и краски на водной основе</span>
+                        <br><br>Лаки и краски на водной основе- образуют прочное и эластичное покрытие устойчивое к царапинам, сколам и мытью.<br><br>
+                        <span>2. Масляные покрытия</span>
+                        <br><br>Масляное покрытие - за счет впитывания древесиной масла, масляное покрытие сохраняет и подчеркивает натуральный вид древесины, выделяя текстуру дерева и его рисунок. <br><br>Покрытие маслом нуждается в регулярном уходе и обновлении, масло в меньшей степени защищает древесину от влаги, очень чувствительно может реагировать на бытовую химию.<br><br>
+                        <span>3. Покрытие на основе масла и воска</span> 
+                        <br><br>Покрытие на основе масла и воска - масло проникает в поры древесины и защищает ее изнутри, а воск образует на поверхности эластичное, воздухопроницаемое покрытие и защищает древесину снаружи. Таким образом древесина остается красивой в течении долгого времени.
+                    </p>
+                </div>
+                <!-- номер страницы -->
+                <div class="page-6__page-number page-number">
+                    <p class="page-number__number">6</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- седьмая страница -->
+        <section class="page-background page-background_pb">
+            <div class="page page-7 text text_fs-20px">
+                <!-- логотип -->
+                <div class="page-7__logo logo mb-7rem">
+                    <a href="#"><img class="logo__nikason-logo" src="icons/nikason-logo.svg" alt="logo"></a>
+                </div>
+                <!-- заголовок и содержание -->
+                <div class="page-7__reddesign-guide reddesign-guide mb-4rem">
+                    <h2 class="reddesign-guide__title title-h2 title-h2_black mb-4rem">Разборка мебели и снятие фурнитуры</h2>
+                    <p class="reddesign-guide__text">Будет намного проще, если разобрать мебель на отдельные детали. Зачастую достаточно только снять фурнитуру, навесные дверца, извлечь выдвижные ящики.  Разбирать ли каркас- смотрите по ситуации. Не нужно разбирать мебель если все детали прочно соединены. Разбирайте в том случае если они расшатаны. 
+                        <br><br>Перед началом разборки, чтобы не перепутать детали сфотографируйте, приклейте малярный скотч и на нем подпишите для каких элементов он предназначен. Так вам будет проще собрать детали после реставрации. </p>
+                    <img class="reddesign-guide__img" src="img/manual/page-6-img.png" alt="img">
+                    <p class="reddesign-guide__text">
+                        <span>Как разобрать соединения на клею: </span> 
+                        <br><br>Следует разнять расшатавшийся элемент и очистить остатки старого клея с детали, где расшаталось изделие. Если вещь склеена намертво- не стоит ее разбирать, так как демонтаж может привести к вмятинам и прочим травмам. 
+                        <br><br>Склеенные соединения также можно размягчить строительным феном. Направьте фен на клеевой шов , клей размягчиться и вы сможете разобрать склейку. Будьте осторожны чтобы сильным нагревом не испортить детали. 
+                        <br><br>Скрытые соединения частей на деревянных шкантах разбирайте постукиванием киянки и аккуратно разделяют стамеской или шпателем.<br><br>
+                        <span>Очистка фурнитуры из меди, бронзы и латуни:</span>
+                        <br><br>Для снятия фурнитуры используйте отвертку, кусачки, пассатиж и гвоздодер. Нужно смешать в равных пропорциях соль и муку и добавить уксуса, чтобы образовалась густая паста. Этой смесью при помощи мягкой ткани нужно протереть фурнитуру пока оно не засияет. 
+                    </p>
+                </div>
+                <!-- номер страницы -->
+                <div class="page-7__page-number page-number">
+                    <p class="page-number__number">7</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- восьмая страница -->
+        <section class="page-background page-background_pb">
+            <div class="page page-8 text text_fs-20px">
+                <!-- логотип -->
+                <div class="page-8__logo logo mb-7rem">
+                    <a href="#"><img class="logo__nikason-logo" src="icons/nikason-logo.svg" alt="logo"></a>
+                </div>
+                <!-- заголовок и содержание -->
+                <div class="page-8__reddesign-guide reddesign-guide mb-4rem">
+                    <h2 class="reddesign-guide__title title-h2 title-h2_black mb-4rem">Удаление лакокрасочного покрытия</h2>
+                    <p class="reddesign-guide__text">
+                        <span>Термический метод:</span>
+                        <br><br>Если необходимо удалить несколько слоев старой краски выбирайте строительный фен любой фирмы. Краска разогревается под воздействием строительного фена, становится мягкой. После этого покрытие легко удалить при помощи шпателя ARMERO. Работайте осторожно! Если сильно нагреть, то можно повредить основание дерева или поджарить часть краски. Если это случилось дефект можно устранить при помощи шлифовки в ходе работы.<br><br>
+                        <span>Химический метод:</span>
+                        <br><br>Для удаления застарелого лакокрасочного покрытия также используют специальную смывку для очистки краски с дерева. Их продают в строительных или лакокрасочных магазинах. На краску наносят слой реактива, который вступает в реакцию и растворяет старый слой покрытия. <br><br>
+                        <span>Схема:</span>
+                        <br><br>1. Обязательно оденьте перчатки и маску. Смывка очень токсична. Даже маленькие частицы попавшие на кожу могут вызвать ожог. Закрывайте открытые участки тела.
+                        <br><br>2. Нанесите смывку на поверхность кистью или распределите шпателем, стараясь не проводить два раза по уже покрытому участку. Не стоит наносить смывку сразу на весь предмет, во избежании ее высыхания, это усложнит снятие. Для лучшего эффекта можно накрыть целлофановой пленкой.
+                        <br><br>3. Выдерживайте пока покрытие не вспучиться где то 5-15 минут.
+                        <br><br>4. Размягченное покрытие удалите шпателем ARMERO. Если остались не удаленные участки обрабатываем их повторно.
+                        <br><br>5. Затем тщательно смойте водой остатки смывки и просушите поверхность.<br><br>
+                        <span>Механический метод:</span>
+                        <br><br>Если покрытие уже потрескалось и легко отлетает, то используйте металлический скребок, нож или шпатель. Участки, которые не удалось почистить руками удаляем при помощи шлифмашинки. Используйте для этих целей наждачную бумагу номером 60-80. Если нет шлифмашины шлифование производится наждачной бумагой вручную. Для этого используйте шлифовальным блоком или деревянным бруском обернутым вокруг него куском наждачной бумаги.
+                    </p>
+                </div>
+                <!-- номер страницы -->
+                <div class="page-8__page-number page-number">
+                    <p class="page-number__number">8</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- девятая страница -->
+        <section class="page-background page-background_pb">
+            <div class="page page-9 text text_fs-20px">
+                <!-- логотип -->
+                <div class="page-9__logo logo mb-7rem">
+                    <a href="#"><img class="logo__nikason-logo" src="icons/nikason-logo.svg" alt="logo"></a>
+                </div>
+                <!-- заголовок и содержание -->
+                <div class="page-9__reddesign-guide reddesign-guide mb-4rem">
+                    <h2 class="reddesign-guide__title title-h2 title-h2_black mb-4rem">Удаление повреждений</h2>
+                    <p class="reddesign-guide__text">
+                        Трещины в дереве возникают по разным причина. Они могут появляться из за естественной усушки, механических повреждений и других факторов. Для их устранения используют широкий арсенал средств- шпатлевки по дереву, клеевые составы, герметики итд. 
+                        <br><br>Я обычно использую шпатлевку по дереву, твердый мебельный воск, смесь столярного клея и древесной пыли и бруски дерева для наращивания отколотых небольших фрагментов.
+                        <br><br>1. Шпатлевка по дереву любой фирмы
+                    </p>
+                    <img src="img/manual/page-9-img-1.png" alt="img">
+                    <p class="reddesign-guide__text">2. Смесь клея Titebond и древесной пыли (мелкая опилка) : Смешайте 1 часть древесной пыли и 2-3 части клея Titebond до получения густой консистенции для нанесения мастихином или шпателем.</p>
+                    <img src="img/manual/page-9-img-2.png" alt="img">
+                    <p class="reddesign-guide__text">3. Для исправления более крупных повреждений рекомендуется вставлять  кусочки (бруски) дерева. Бруски дерева подберите по размеру отколотого фрагмента, наложив на поврежденное место, очерчите на мебели форму бруска, сделайте выемку до нужной глубины и строгайте как можно лучше внутренние стенки углубления. Затем уже накладывают брусок на отверстие. Если он входит плотно, промежутки между краями бруска и выемки намажьте клеем Titebond все внутренние стороны выемки и загоните брусок в паз несколькими ударами молотка. Излишки клея уберите тряпкой. Скрепите F-образной струбциной. Подождите 3 часа. Снимите струбцину и отшлифуйте приклееный брусок пока она не примет форму реставрируемой поверхности. При ремонте вертикальных поверхностей (например ножки стола или стула) следует пользоваться бечевкой, туго стягивая приклеиваемый кусок дерева.
+                        <br><br>4. Твердый мебельный воск для мелких трещин , сколов и царапин. Применять восковый карандаш разрешается на деревянной, лакированной и ламинированной поверхности. В магазинах предоставлено разнообразие цветовой гаммы. Для использования твердого вида применяется строительный фен, зажигалка. Для этого необходимо расплавить воск и нанести на царапину, стол и разровнять. При необходимости поверхность зашлифовать.
+                    </p>
+                    <img src="img/manual/page-9-img-3.png" alt="img">
+                </div>
+                <!-- номер страницы -->
+                <div class="page-9__page-number page-number">
+                    <p class="page-number__number">9</p>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>

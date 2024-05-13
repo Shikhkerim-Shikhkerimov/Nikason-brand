@@ -171,6 +171,9 @@ html {
 .text_fs-16px {
   font-size: 16px;
 }
+.text_fs-20px {
+  font-size: 2rem;
+}
 .text_fs-24px {
   font-size: 2.4rem;
 }
@@ -1411,10 +1414,21 @@ html {
   height: 100%;
 }
 
+.reddesign-guide span {
+  font-weight: bolder;
+}
+.reddesign-guide img {
+  max-width: 33rem;
+  max-height: 33rem;
+  display: block;
+  margin: 3rem auto;
+}
+
 .page-1 {
   width: 100%;
   height: -moz-max-content;
   height: max-content;
+  border-top: 0.2rem solid black;
   padding: 2rem 7rem;
   display: flex;
   flex-direction: column;
@@ -1480,10 +1494,6 @@ html {
   text-align: center;
 }
 
-.page-3 {
-  width: 100%;
-  height: 100%;
-}
 .page-3__content-list {
   margin: 0 auto;
   margin-bottom: 10rem;
@@ -1505,18 +1515,18 @@ html {
   margin-bottom: 1rem;
 }
 
-.place-restoration {
+.redesign-recommendation {
   width: 100%;
 }
-.place-restoration__content {
+.redesign-recommendation__content {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.place-restoration__text {
+.redesign-recommendation__text {
   max-width: 50rem;
 }
-.place-restoration__img {
+.redesign-recommendation__img {
   padding: 2rem;
   max-width: 20rem;
   max-height: 20rem;
