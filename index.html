@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png">
-    <link rel="manifest" href="icons/favicons/manifest.json">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="src/icons/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="src/icons/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="src/icons/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="src/icons/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="src/icons/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="src/icons/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="src/icons/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="src/icons/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/icons/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="src/icons/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/icons/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="src/icons/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/icons/favicons/favicon-16x16.png">
+    <link rel="manifest" href="src/icons/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -35,10 +35,10 @@
                 <input class="hamburger__input" type="checkbox" id="hamburger">
                 <nav class="hamburger__navigation nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="#">Мастер-классы</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Мебель на заказ</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+                        <li class="nav__item"><a class="nav__link" href="/src/master-classes.html">Мастер-классы</a></li>
+                        <li class="nav__item"><a class="nav__link" href="/src/manual.html">Руководство</a></li>
+                        <li class="nav__item"><a class="nav__link" href="/src/order-furniture.html">Мебель на заказ</a></li>
+                        <li class="nav__item"><a class="nav__link" href="/src/about-us.html">О нас</a></li>
                     </ul>
                 </nav>
                 <label class="hamburger__btn" for="hamburger"><span></span></label>
@@ -46,17 +46,17 @@
             <!-- меню сайта -->
             <nav class="header__navigation nav-menu">
                 <ul class="nav-menu__list">
-                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Мастер-классы</a></li>
-                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Контакты</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="/src/master-classes.html">Мастер-классы</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="/src/manual.html">Руководство</a></li>
                     <!-- логотип сайта -->
-                    <div class="nav-menu__item"><a class="nav-menu__logo" href="#"> <img class="nav-menu__logo" src="icons/nikason-logo.svg" alt="logo"></a></div>
-                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">Мебель на заказ</a></li>
-                    <li class="nav-menu__item"><a class="nav-menu__link" href="#">О нас</a></li>
+                    <div class="nav-menu__item"><a class="nav-menu__logo" href="/index.html"> <img class="nav-menu__logo" src="src/icons/nikason-logo.svg" alt="logo"></a></div>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="/src/order-furniture.html">Мебель на заказ</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="/src/about-us.html">О нас</a></li>
                 </ul>
             </nav>
             <!-- левая часть секции -->
             <div class="header__left-side left-side">
-                <img class="left-side__img" src="img/home-page/header-img.png" alt="img">
+                <img class="left-side__img" src="src/img/home-page/header-img.png" alt="img">
             </div>
             <!-- правая часть секции -->
             <div class="header__right-side right-side">
@@ -64,12 +64,12 @@
                     <h1 class="right-side__title title-h1">Изготовление и реставрация мебели</h1>
                     <p class="right-side__text-2 text">Авторская мебель ручной работы, сделанная с душой и трепетом.</p>
                 <!-- кнопка -->
-                <div class="right-side__btn"><a class="main-btn" href="#">Смотреть услуги</a></div>
+                <div class="right-side__btn"><a class="main-btn" href="#services">Смотреть услуги</a></div>
                 <!-- иконки соц-сетей -->
                 <div class="right-side__icons icons">
-                    <a class="icons__link" href="#"><img src="icons/telegram.svg" alt="telegram"></a>
-                    <a class="icons__link" href="#"><img src="icons/instagram.svg" alt="instagram"></a>
-                    <a class="icons__link" href="#"><img src="icons/whatsapp.svg" alt="whatsapp"></a>
+                    <a class="icons__link" href="https://t.me/tidyo9aQZws0NzVi"><img src="src/icons/telegram.svg" alt="telegram"></a>
+                    <a class="icons__link" href="https://www.instagram.com/mebel_ot_nikason?igsh=N3Y0Njh2amtlOTd0"><img src="src/icons/instagram.svg" alt="instagram"></a>
+                    <a class="icons__link" href="tel:+70000000000"><img src="src/icons/whatsapp.svg" alt="whatsapp"></a>
                 </div>
             </div>
         </header>
@@ -87,14 +87,14 @@
             <!-- о производстве -->
             <div class="brand-information__secondary secondary">
                 <h2 class="secondary__title title-h2">Более 10 лет мы производим</h2>
-                <div class="secondary__icon text"><img src="icons/information-icon-1.svg" alt="img">Двери</div>
-                <div class="secondary__icon text"><img src="icons/information-icon-2.svg" alt="img">Шкафы</div>
-                <div class="secondary__icon text"><img src="icons/information-icon-3.svg" alt="img">Столы и стулья</div>
-                <div class="secondary__icon text"><img src="icons/information-icon-4.svg" alt="img">Комоды</div>
-                <div class="secondary__icon text"><img src="icons/information-icon-5.svg" alt="img">Тумбы</div>
-                <div class="secondary__icon text"><img src="icons/information-icon-6.svg" alt="img">Арки</div>
-                <div class="secondary__icon text"><img src="icons/information-icon-7.svg" alt="img">Перегородки</div>
-                <div class="secondary__icon text"><img src="icons/information-icon-8.svg" alt="img">Кровати</div>
+                <div class="secondary__icon text"><img src="src/icons/information-icon-1.svg" alt="img">Двери</div>
+                <div class="secondary__icon text"><img src="src/icons/information-icon-2.svg" alt="img">Шкафы</div>
+                <div class="secondary__icon text"><img src="src/icons/information-icon-3.svg" alt="img">Столы и стулья</div>
+                <div class="secondary__icon text"><img src="src/icons/information-icon-4.svg" alt="img">Комоды</div>
+                <div class="secondary__icon text"><img src="src/icons/information-icon-5.svg" alt="img">Тумбы</div>
+                <div class="secondary__icon text"><img src="src/icons/information-icon-6.svg" alt="img">Арки</div>
+                <div class="secondary__icon text"><img src="src/icons/information-icon-7.svg" alt="img">Перегородки</div>
+                <div class="secondary__icon text"><img src="src/icons/information-icon-8.svg" alt="img">Кровати</div>
             </div>
         </section>
 
@@ -103,42 +103,42 @@
             <h2 class="nikason-family__title title-h2">NIKASON BRAND это семейная мастерская</h2>
             <!-- левая часть секции -->
             <div class="nikason-family__left-side">
-                <img class="nikason-family__img" src="img/home-page/nikason-family.png" alt="img">
+                <img class="nikason-family__img" src="src/img/home-page/nikason-family.png" alt="img">
             </div>
             <!-- правая часть секции -->
             <div class="nikason-family__right-side nf-right-side">
                 <h3 class="nf-right-side__title title-h3">Саргылана и Никита Колодезниковы-Матчитовы</h3>
                 <p class="nf-right-side__text text text_black">Саргылана - реставратор-декоратор, преображает и дарит вторую жизнь старой мебели. <br><br> Никита - мастер по дереву, вся мебель делается его умелыми руками.</p>
                 <!-- кнопка -->
-                <div class="nf-right-side__btn"><a class="main-btn" href="#">Подробнее о нас</a></div>
+                <div class="nf-right-side__btn"><a class="main-btn" href="/src/about-us.html">Подробнее о нас</a></div>
             </div>
         </section>
 
         <!-- секция с видео -->
         <section class="section-video">
             <h2 class="section-video__title title-h2">Посмотрите видео о нас</h2>
-            <video class="section-video__video-review" controls poster="img/home-page/video-poster.png">
-                <source src="video/видеообзор о нас.mp4">
-                <source src="video/видеообзор о нас.webm">
+            <video class="section-video__video-review" controls poster="src/img/home-page/video-poster.png">
+                <source src="src/video/видеообзор о нас.mp4">
+                <source src="src/video/видеообзор о нас.webm">
             </video>
         </section>
 
         <!-- секция с услугами -->
-        <section class="services">
+        <section class="services" id="services">
             <h2 class="services__title title-h2">Наши услуги</h2>
             <!-- Мебель на заказ -->
             <div class="services__ordering ordering">
-                <img class="ordering__img" src="img/home-page/services-1.png" alt="img">
+                <img class="ordering__img" src="src/img/home-page/services-1.png" alt="img">
                 <div class="ordering__content">
                     <h3 class="ordering__title title-h3">Мебель на заказ</h3>
                     <p class="ordering__text text text_black">Мебель под заказ по индивидуальным размерам это гарантия отличного качества, долговечность, экологичность и эксклюзивность наших изделий. <br> Возможность создания своего неповторимого стиля, уникальность и неповторимость каждого изделия.</p>
-                    <div class="ordering__btn"><a class="main-btn" href="#">Заказать мебель</a></div>
+                    <div class="ordering__btn"><a class="main-btn" href="/src/order-furniture.html#feedback">Заказать мебель</a></div>
                 </div>
-                <img class="ordering__img" src="img/home-page/services-2.png" alt="img">
+                <img class="ordering__img" src="src/img/home-page/services-2.png" alt="img">
                 <div class="ordering__content">
                     <h3 class="ordering__title title-h3">Мастер-классы</h3>
                     <p class="ordering__text text text_black">Что делать, если память о предках хочется сохранить, но к вашему интерьеру старая и испорченная мебель не подходит? <br>Правильно, отреставрировать его и наслаждаться не только обновлённым видом мебели, но и с теплотой помнить, что эта мебель была сделана талантливыми предками.</p>
-                    <div class="ordering__btn"><a class="main-btn" href="#">Купить мастер-класс</a></div>
+                    <div class="ordering__btn"><a class="main-btn" href="/src/order-furniture.html#feedback">Купить мастер-класс</a></div>
                 </div>
             </div>
         </section>
@@ -151,7 +151,7 @@
                     <p class="quality-assurance__text text text_fs-24px">На каждое изделие ставим авторский логотип (клеймо) как знак качества и узнаваемости мастера. Таким образом мастер несёт ответственность за каждое изделие помеченное печатью. Есть гарантия на 12 месяцев. </p>
                     <!-- логотип (клеймо) -->
                     <div class="quality-assurance__logo">
-                        <img src="icons/nikason-logo.svg" alt="logo">
+                        <img src="src/icons/nikason-logo.svg" alt="logo">
                     </div>
                 </div>
             </div>
@@ -164,10 +164,10 @@
             <!-- меню -->
             <nav class="footer__menu menu">
                 <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link text text_white" href="#">Мастер-классы</a></li>
-                    <li class="menu__item"><a class="menu__link text text_white" href="#">Контакты</a></li>
-                    <li class="menu__item"><a class="menu__link text text_white" href="#">Мебель на заказ</a></li>
-                    <li class="menu__item"><a class="menu__link text text_white" href="#">О нас</a></li>
+                    <li class="menu__item"><a class="menu__link text text_white" href="/src/master-classes.html">Мастер-классы</a></li>
+                    <li class="menu__item"><a class="menu__link text text_white" href="/src/manual.html">Руководство</a></li>
+                    <li class="menu__item"><a class="menu__link text text_white" href="/src/order-furniture.html">Мебель на заказ</a></li>
+                    <li class="menu__item"><a class="menu__link text text_white" href="/src/about-us.html">О нас</a></li>
                 </ul>
             </nav>
             <div class="footer__agreement">
@@ -176,9 +176,9 @@
             </div>
             <!-- иконки соц-сетей -->
             <div class="footer__icons">
-                <a class="footer__link" href="#"><img class="footer__link footer__link_img" src="icons/icon-footer-1.svg" alt="telegram"></a>
-                <a class="footer__link" href="#"><img class="footer__link footer__link_img" src="icons/icon-footer-2.svg" alt="instagram"></a>
-                <a class="footer__link" href="#"><img class="footer__link footer__link_img" src="icons/icon-footer-3.svg" alt="whatsapp"></a>
+                <a class="footer__link" href="https://t.me/tidyo9aQZws0NzVi"><img class="footer__link footer__link_img" src="src/icons/icon-footer-1.svg" alt="telegram"></a>
+                <a class="footer__link" href="https://www.instagram.com/mebel_ot_nikason?igsh=N3Y0Njh2amtlOTd0"><img class="footer__link footer__link_img" src="src/icons/icon-footer-2.svg" alt="instagram"></a>
+                <a class="footer__link" href="tel:+70000000000"><img class="footer__link footer__link_img" src="src/icons/icon-footer-3.svg" alt="whatsapp"></a>
             </div>
         </footer>
     </div>
