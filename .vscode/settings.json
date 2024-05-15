@@ -1,4 +1,14 @@
 {
     "git.ignoreLimitWarning": true,
-    "cSpell.language": "en,ru,ru-RU"
+    "cSpell.language": "en,ru,ru-RU",
+    "liveSassCompile.settings.formats": [
+
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css",
+            "savePathReplacementPairs": null
+        }
+    ]
 }
