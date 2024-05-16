@@ -1,6 +1,7 @@
 // меня для планшетов и мобильной версии
 .hamburger
     grid-column: 1/-1
+    grid-row: 1/2
     height: 7rem
     display: flex
     justify-content: flex-end
@@ -52,12 +53,10 @@
     width: 100%
     border-bottom: 1px solid $pale-brown
     &__list
-        display: grid
-        grid-template-columns: repeat(auto-fit, minmax(20rem, max-content))
-        grid-template-rows: minmax(min-content, 7rem)
-        justify-content: center
+        display: flex
+        flex-direction: column
         align-items: center
-        justify-items: center
+        justify-content: center
     &__link
         text-decoration: none
         color: $signal-black

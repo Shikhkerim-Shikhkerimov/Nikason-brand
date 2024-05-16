@@ -8,9 +8,12 @@
     align-items: center
     justify-content: space-evenly
     background: linear-gradient(0deg, rgba(203,179,148,1) 0%, rgba(203,179,148,1) 40%, rgba(243,239,234,1) 40%, rgba(243,239,234,1) 100%)
+    animation: manual-page-1 1s
+    @include adaptiv(1000px)
+        border-top: 0
     &__description
         text-align: center
-        animation: manual-page-1 2s
+
 
 //  изображения
 .img
@@ -35,7 +38,6 @@
 .nickname
     display: flex
     align-items: center
-    animation: manual-page-1 2s
     &__logo
         width: 100%
         height: 100%

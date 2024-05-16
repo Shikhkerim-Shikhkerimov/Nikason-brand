@@ -4,6 +4,7 @@
     display: grid
     grid-template-columns: minmax(5rem, 14rem) minmax(min-content, 116rem) minmax(5rem, 14rem)
     grid-template-rows: repeat(2, max-content)
+    animation: manual-page-1 1s
     &__navigation
         grid-column: 2/3
         grid-row: 1/2
@@ -17,6 +18,8 @@
         flex-direction: column
         align-items: center
         background: $gradient-black-05, url(../img/master-classes-page/header-img.png) center / cover no-repeat
+        @include adaptiv(1000px)
+            grid-row: 1/-1
     &__title
         text-align: center
         animation: mc-page-header-title 2s ease-in-out

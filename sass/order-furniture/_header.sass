@@ -4,6 +4,7 @@
     display: grid
     grid-template-columns: minmax(5rem, 14rem) minmax(min-content, 116rem) minmax(5rem, 14rem)
     grid-template-rows: repeat(2, max-content)
+    animation: manual-page-1 1s
     &__navigation
         grid-column: 2/3
         grid-row: 1/2
@@ -18,6 +19,8 @@
         align-items: center
         background: $gradient-signal-black-05, url(../img/order-furniture/header-img.png) center / cover no-repeat
         text-align: center
+        @include adaptiv(1000px)
+            grid-row: 1/-1
     &__text
         margin-bottom: .5rem
         animation: order-furniture-header-text 2s ease-in-out
