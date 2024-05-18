@@ -633,10 +633,10 @@ body {
   }
 }
 .right-side__text-1 {
-  margin-bottom: 1.7rem;
+  margin-bottom: 20px;
 }
 .right-side__text-2 {
-  margin-bottom: 4.8rem;
+  margin-bottom: 50px;
 }
 .right-side__btn {
   display: inline-block;
@@ -644,7 +644,7 @@ body {
 }
 @media (max-width: 1000px) {
   .right-side__btn {
-    margin: 0 0 2rem 0;
+    margin: 0 0 30px 0;
   }
 }
 
@@ -857,7 +857,7 @@ body {
   height: 82vh;
   padding: 2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 58.25%, rgba(0, 0, 0, 0.5) 100%), url(../img/master-classes-page/header-img.png) center/cover no-repeat;
@@ -871,6 +871,7 @@ body {
 .master-classes__title {
   text-align: center;
   animation: mc-page-header-title 2s ease-in-out;
+  margin-bottom: 80px;
 }
 .master-classes__btn {
   animation: mc-page-header-btn 2s ease-in-out;
@@ -1103,7 +1104,7 @@ body {
   }
 }
 .order-furniture__text {
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
   animation: order-furniture-header-text 2s ease-in-out;
 }
 .order-furniture__title {
@@ -1114,7 +1115,7 @@ body {
 }
 
 .title-h1__1 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 25px;
   animation: order-furniture-header-title-1 3s ease-in-out;
 }
 .title-h1__2 {
@@ -1490,7 +1491,7 @@ body {
 @media (max-width: 1000px) {
   .page-1 {
     border-top: 0;
-    height: 100vh;
+    height: 95vh;
   }
 }
 .page-1__description {
