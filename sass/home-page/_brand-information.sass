@@ -6,20 +6,20 @@
 // о бренде
 .primary
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr))
+    grid-template-columns: repeat(auto-fit, 32rem)
     grid-template-rows: repeat(2, min-content)
     grid-gap: 7rem 4rem
-    text-align: center
+    justify-content: center
     margin-bottom: clamp(2rem, 6.5vw, 7rem)
     transition: all .3s
-    &:hover
-        transform: scale(1.05)
     &__title
-        grid-column: 1/-1
-        text-align: left
+        margin-bottom: clamp(2rem, 6.5vw, 7rem)
     &__content
         padding-bottom: 1.4rem
         border-bottom: .3rem solid $pale-brown
+        text-align: center
+    &__text
+        width: 100%
 
 // о производстве
 .secondary
@@ -27,9 +27,6 @@
     grid-template-columns: repeat(auto-fit, minmax(23.5rem, 1fr))
     grid-template-rows: repeat(3, min-content)
     align-items: center
-    transition: all .3s
-    &:hover
-        transform: scale(1.05)
     &__title
         grid-column: 1/-1
         margin-bottom: clamp(2rem, 6.5vw, 7rem)
