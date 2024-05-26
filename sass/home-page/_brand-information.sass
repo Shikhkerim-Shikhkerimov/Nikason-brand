@@ -1,7 +1,7 @@
 .brand-information
-    grid-column: coll-start/coll-end
+    grid-column: full-start/full-end
     grid-row: brand-inf-start/brand-inf-end
-    padding: 10rem 0
+    padding: 15rem 2rem
 
 // о бренде
 .primary
@@ -9,8 +9,8 @@
     grid-template-columns: repeat(auto-fit, 32rem)
     grid-template-rows: repeat(2, min-content)
     grid-gap: 7rem 4rem
-    justify-content: center
-    margin-bottom: clamp(2rem, 6.5vw, 7rem)
+    justify-content: space-around
+    margin-bottom: 15rem
     transition: all .3s
     &__title
         margin-bottom: clamp(2rem, 6.5vw, 7rem)
@@ -24,7 +24,7 @@
 // о производстве
 .secondary
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(23.5rem, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr))
     grid-template-rows: repeat(3, min-content)
     align-items: center
     &__title
@@ -35,4 +35,4 @@
         justify-items: center
         grid-row-gap: 2rem
         padding: 5rem 0
-        border: .1rem solid black
+        border: .1rem solid $pale-brown

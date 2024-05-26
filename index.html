@@ -35,10 +35,10 @@
                 <input class="hamburger__input" type="checkbox" id="hamburger">
                 <nav class="hamburger__navigation nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="master-classes.html">Мастер-классы</a></li>
-                        <li class="nav__item"><a class="nav__link" href="manual.html">Руководство</a></li>
                         <li class="nav__item"><a class="nav__link" href="order-furniture.html">Мебель на заказ</a></li>
+                        <li class="nav__item"><a class="nav__link" href="master-classes.html">Мастер-классы</a></li>
                         <li class="nav__item"><a class="nav__link" href="about-us.html">О нас</a></li>
+                        <li class="nav__item"><a class="nav__link" href="manual.html">Руководство</a></li>
                     </ul>
                 </nav>
                 <label class="hamburger__btn" for="hamburger"><span></span></label>
@@ -46,12 +46,12 @@
             <!-- меню сайта -->
             <nav class="header__navigation nav-menu">
                 <ul class="nav-menu__list">
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="order-furniture.html">Мебель на заказ</a></li>
                     <li class="nav-menu__item"><a class="nav-menu__link" href="master-classes.html">Мастер-классы</a></li>
-                    <li class="nav-menu__item"><a class="nav-menu__link" href="manual.html">Руководство</a></li>
                     <!-- логотип сайта -->
                     <li class="nav-menu__item"><a class="nav-menu__logo" href="index.html"> <img class="nav-menu__logo" src="icons/nikason-logo.svg" alt="logo"></a></li>
-                    <li class="nav-menu__item"><a class="nav-menu__link" href="order-furniture.html">Мебель на заказ</a></li>
                     <li class="nav-menu__item"><a class="nav-menu__link" href="about-us.html">О нас</a></li>
+                    <li class="nav-menu__item"><a class="nav-menu__link" href="manual.html">Руководство</a></li>
                 </ul>
             </nav>
             <!-- левая часть секции -->
@@ -122,10 +122,13 @@
         <!-- секция с видео -->
         <section class="section-video">
             <h2 class="section-video__title title-h2">Посмотрите видео о нас</h2>
-            <video class="section-video__video-review" controls poster="img/home-page/video-poster.png">
-                <source src="video/видеообзор-о-нас.mp4">
-                <source src="video/видеообзор-о-нас.webm">
-            </video>
+            <div class="section-video__video-div">
+                <video class="section-video__video-review" controls poster="img/home-page/video-poster.png">
+                    <source src="video/видеообзор-о-нас.mp4">
+                    <source src="video/видеообзор-о-нас.webm">
+                </video>
+            </div>
+            
         </section>
 
         <!-- секция с услугами -->
