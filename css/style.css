@@ -860,7 +860,7 @@ body {
 
 .master-classes-container {
   display: grid;
-  grid-template-columns: [full-start] minmax(5rem, 14rem) [coll-start] minmax(min-content, 116rem) [coll-end] minmax(5rem, 14rem) [full-end];
+  grid-template-columns: [full-start] minmax(min-content, 144rem) [full-end];
   grid-template-rows: [header-start] min-content [header-end our-works-start] min-content [our-works-end mc-techniques-start] min-content [mc-techniques-end section-background-start] min-content [section-background-end restoration-start] min-content [restoration-end joinery-start] min-content [joinery-end redesign-start] min-content [redesign-end footer-start] min-content [footer-end];
 }
 
@@ -1412,14 +1412,14 @@ body {
 
 .about-us-container {
   display: grid;
-  grid-template-columns: [full-start] minmax(5rem, 14rem) repeat(1, [coll-start] minmax(min-content, 116rem) [coll-end]) minmax(5rem, 14rem) [full-end];
+  grid-template-columns: [full-start] minmax(min-content, 144rem) [full-end];
   grid-template-rows: [header-start] min-content [header-end about-workshop-start] min-content [about-workshop-end about-founder-start] min-content [about-founder-end feedback-start] min-content [feedback-end footer-start] min-content [footer-end];
 }
 
 .about-workshop {
   grid-column: full-start/full-end;
   grid-row: about-workshop-start/about-workshop-end;
-  padding: 10rem 0;
+  padding: 15rem 0;
   border-top: 0.2rem solid black;
   animation: manual-page-1 2s;
 }
@@ -1455,9 +1455,11 @@ body {
 }
 
 .about-founder {
-  grid-column: coll-start/coll-end;
+  grid-column: full-start/full-end;
   grid-row: about-founder-start/about-founder-end;
   transition: all 0.3s;
+  margin-bottom: 15rem;
+  padding: 0 2rem;
 }
 .about-founder__box {
   display: grid;
