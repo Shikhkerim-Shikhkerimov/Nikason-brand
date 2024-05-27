@@ -1,13 +1,13 @@
 .about-us
-    grid-column: coll-start/coll-end
+    grid-column: full-start/full-end
     grid-row: about-us-start/about-us-end
-    padding: 10rem 0
+    padding: 15rem 2rem
     transition: all .3s
     @include adaptiv(950px)
         text-align: center
     &__information
         display: grid
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr))
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr))
         grid-template-rows: repeat(2, max-content)
         justify-items: center
         grid-gap: 7rem

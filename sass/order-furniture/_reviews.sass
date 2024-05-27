@@ -1,17 +1,19 @@
 .reviews
-    grid-column: coll-start/coll-end
+    grid-column: full-start/full-end
     grid-row: reviews-start/reviews-end
+    padding: 0 2rem
+    margin-bottom: 15rem
     transition: all .3s
 
 // блок с отзывами
 .box-feedback
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr))
     grid-template-rows: repeat(4, max-content)
-    grid-gap: 4rem 2rem
+    grid-gap: 3rem 2rem
     &__card
         border: 1px solid $dark-green
-        padding: 1.5rem
+        padding: 2.5rem
         border-radius: .3rem
         transition: all .5s
         &:hover

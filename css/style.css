@@ -1121,7 +1121,7 @@ body {
   animation: order-furniture-header-text 2s ease-in-out;
 }
 .order-furniture__title {
-  margin-bottom: 9rem;
+  margin-bottom: 15rem;
 }
 .order-furniture__btn {
   animation: order-furniture-header-btn 2s ease-in-out;
@@ -1136,9 +1136,9 @@ body {
 }
 
 .about-us {
-  grid-column: coll-start/coll-end;
+  grid-column: full-start/full-end;
   grid-row: about-us-start/about-us-end;
-  padding: 10rem 0;
+  padding: 15rem 2rem;
   transition: all 0.3s;
 }
 @media (max-width: 950px) {
@@ -1148,7 +1148,7 @@ body {
 }
 .about-us__information {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   grid-template-rows: repeat(2, max-content);
   justify-items: center;
   grid-gap: 7rem;
@@ -1230,55 +1230,59 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 1rem;
   outline: 0.2rem solid #A1B29F;
   padding: 0.2em;
 }
 
 .production-stages {
-  grid-column: coll-start/coll-end;
+  grid-column: full-start/full-end;
   grid-row: production-stages-start/production-stages-end;
-  padding: 10rem 0;
+  padding: 15rem 2rem;
   transition: all 0.3s;
 }
 
 .stages {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   grid-template-rows: repeat(2, min-content);
+  grid-gap: 5rem;
 }
 .stages__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(2, max-content);
   justify-items: end;
   padding: 2rem 4rem;
+  text-align: center;
 }
 .stages__number {
-  grid-column: 2/3;
+  width: 100%;
+  grid-column: 1/-1;
   grid-row: 1/2;
 }
 .stages__text {
-  grid-column: 1/2;
+  width: 100%;
+  grid-column: 1/-1;
   grid-row: 2/3;
-  width: 23rem;
 }
 
 .reviews {
-  grid-column: coll-start/coll-end;
+  grid-column: full-start/full-end;
   grid-row: reviews-start/reviews-end;
+  padding: 0 2rem;
+  margin-bottom: 15rem;
   transition: all 0.3s;
 }
 
 .box-feedback {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-template-rows: repeat(4, max-content);
-  grid-gap: 4rem 2rem;
+  grid-gap: 3rem 2rem;
 }
 .box-feedback__card {
   border: 1px solid #758a73;
-  padding: 1.5rem;
+  padding: 2.5rem;
   border-radius: 0.3rem;
   transition: all 0.5s;
 }
@@ -1329,14 +1333,15 @@ body {
 }
 
 .feedback {
-  grid-column: coll-start/coll-end;
+  grid-column: full-start/full-end;
   grid-row: feedback-start/feedback-end;
-  padding: 10rem 0;
+  padding: 0 2rem;
+  margin-bottom: 15rem;
   transition: all 0.3s;
 }
 .feedback__request-container {
   background: linear-gradient(180deg, rgba(50, 50, 50, 0.7) 61.6%, rgba(0, 0, 0, 0.7) 100%), url(../img/order-furniture/feedback-img.jpg) center/cover no-repeat;
-  height: 70vh;
+  height: 90vh;
   position: relative;
 }
 .feedback__request {
@@ -1345,7 +1350,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   display: grid;
-  grid-template-columns: 30rem;
+  grid-template-columns: 40rem;
   grid-template-rows: repeat(4, max-content);
   grid-gap: 2rem;
   justify-items: center;
@@ -1354,7 +1359,8 @@ body {
   width: 100%;
 }
 .feedback__input {
-  background: #F3EFEA;
+  background: rgba(255, 255, 255, 0.3215686275);
+  color: #F6F6F6;
   width: 100%;
   height: 5rem;
   border: none;
@@ -1362,6 +1368,12 @@ body {
   padding: 1.5rem;
   border-radius: 0.3rem;
   display: block;
+}
+.feedback__input::-moz-placeholder {
+  color: #F6F6F6;
+}
+.feedback__input::placeholder {
+  color: #F6F6F6;
 }
 .feedback__input:focus:invalid {
   border-bottom: 0.3rem solid #D76363;
@@ -1381,6 +1393,21 @@ body {
 .feedback__input:placeholder-shown + label {
   opacity: 0;
   transform: translateY(-5rem);
+}
+.feedback__checkbox {
+  width: 100%;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.feedback__checkbox input {
+  width: 15px;
+  height: 15px;
+  margin-right: 2rem;
+}
+.feedback__link {
+  text-decoration: none;
 }
 
 .about-us-container {
